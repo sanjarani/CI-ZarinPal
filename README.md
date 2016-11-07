@@ -23,8 +23,7 @@ if ($this->zarinpal->request($merchantId , $amount, $desc, $callback, $mobile, $
     $authority = $this->zarinpal->getAuthority();
     // do database 
     $this->zarinpal->redirect();
-}
-else{
+} else {
     $error = $this->zarinpal->getError();
 }
 ```
