@@ -1,9 +1,6 @@
 # CI-ZarinPal
 Codeigniter 3.x library for ZarinPal payment gateway
 
-Based on https://github.com/MahdiMajidzadeh/CodeIgniter-Zarinpal-gateway
-Without nusoap library
-
 ##how to install
 Copy `ZarinPal.php` to `application/libraries` of your project.
 
@@ -19,7 +16,7 @@ $this->zarinpal->request($merchantId , $amount, $desc, $callback, $mobile, $emai
 ```
 Full code is:
 ```
-if ($this->zarinpal->request($merchantId , $amount, $desc, $callback, $mobile, $email)) {
+if ($this->zarinpal->request($merchantId, $amount, $desc, $callback, $mobile, $email)) {
     $authority = $this->zarinpal->getAuthority();
     // do database 
     $this->zarinpal->redirect();
@@ -29,7 +26,7 @@ if ($this->zarinpal->request($merchantId , $amount, $desc, $callback, $mobile, $
 ```
 For verify user payment:
 ```
-$this->zarinpal->verify($merchantId , $amount, $authority);
+$this->zarinpal->verify($merchantId, $amount, $authority);
 ```
 Full code is:
 ```
