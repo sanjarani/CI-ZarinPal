@@ -1,3 +1,15 @@
+# CI-ZarinPal with my changes
+Sometimes using camel case  is not O.K. in codeigniter So, I did change the camelCase `ZarinPal` to this name `Zarinpal`
+
+**And there's a method called errorText( $errorNumber )**
+
+This method will return error text based on error code
+
+```
+$error       = $this->zarinpal->errorText($errorNumber);
+```
+
+
 # CI-ZarinPal
 Codeigniter 3.x library for ZarinPal payment gateway
 
